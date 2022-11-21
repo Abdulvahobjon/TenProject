@@ -4,7 +4,7 @@ let madal  = document.querySelector('.madal')
 let msg = {
     loading: "Loading... :|",
     success: 'Thank :)',
-    error:"ERROR :(",
+    error:"ERROR :(  , serverga qoyilmagan ",
     serverCom: 'serverga ulang iltimos'
 
 }
