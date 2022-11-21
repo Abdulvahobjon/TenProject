@@ -26,7 +26,7 @@ form.addEventListener('submit' , function(e){
     request.send(formDate)
 
     request.addEventListener('load' , function(){
-        if(request.status == 200){
+        if(request.status == 3200){
             console.log(request.response);
            setInterval(() => {
             elDiv.textContent = msg.success
