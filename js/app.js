@@ -31,6 +31,10 @@ form.addEventListener('submit' , function(e){
            setInterval(() => {
             elDiv.textContent = msg.success
            }, 2000);
+        } else{
+            setInterval(() => {
+             elDiv.textContent = msg.error
+            }, 2000);
         }
     })
 
