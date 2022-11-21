@@ -4,7 +4,8 @@ let madal  = document.querySelector('.madal')
 let msg = {
     loading: "Loading... :|",
     success: 'Thank :)',
-    error:"ERROR :("
+    error:"ERROR :(",
+    serverCom: 'serverga ulang iltimos'
 
 }
 
@@ -26,8 +27,8 @@ form.addEventListener('submit' , function(e){
     request.send(formDate)
 
     request.addEventListener('load' , function(){
-        if(request.status == 3200){
-            console.log(request.response);
+        if(request.status == 200){
+            elDiv.textContent = msg.serverCom
            setInterval(() => {
             elDiv.textContent = msg.success
            }, 2000);
